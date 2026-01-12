@@ -1,0 +1,386 @@
+/* ------------------------------
+   Paleta corporativa CHC
+--------------------------------*/
+:root {
+  --chc-primary: #8a1721;       /* vino / rojo corporativo */
+  --chc-primary-dark: #6b1018;
+  --chc-yellow: #f2b716;        /* amarillo franja */
+  --chc-background: #f7f3ee;   /* fondo cálido claro */
+}
+
+/* ------------------------------
+   Reset básico
+--------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--chc-background);
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ------------------------------
+   Layout general
+--------------------------------*/
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.brand-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.brand-logo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
+}
+
+.brand-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--chc-primary);
+}
+
+.brand-subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #7c2d12;
+  margin-top: 4px;
+}
+
+.welcome-text {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.welcome-text strong {
+  font-weight: 600;
+  color: var(--chc-primary-dark);
+}
+
+.subwelcome-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ------------------------------
+   Barra de búsqueda
+--------------------------------*/
+.search-bar-wrapper {
+  margin: 24px auto 16px;
+  max-width: 480px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.08s ease;
+}
+
+.search-input:focus {
+  border-color: var(--chc-primary);
+  box-shadow: 0 10px 26px rgba(138, 23, 33, 0.18);
+  transform: translateY(-1px);
+}
+
+/* ------------------------------
+   Grid de tarjetas
+--------------------------------*/
+.apps-section-title {
+  margin: 24px 4px 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  .apps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .apps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brand-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-wrapper {
+    padding-top: 20px;
+  }
+}
+
+/* ------------------------------
+   Tarjetas de aplicación
+--------------------------------*/
+.app-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+  border-color: rgba(0, 0, 0, 0.04);
+}
+
+.app-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.app-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.app-card-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  min-height: 40px;
+}
+
+.app-card-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+}
+
+.app-card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.app-card-button i {
+  margin-left: 6px;
+  font-size: 0.8rem;
+}
+
+.app-card-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.26);
+  opacity: 0.95;
+}
+
+.app-card-button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.18);
+}
+
+/* Colores por app */
+.app-incidencias .app-card-icon {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.app-incidencias .app-card-button {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.app-cremeria .app-card-icon {
+  background: linear-gradient(135deg, var(--chc-primary), var(--chc-yellow));
+}
+
+.app-cremeria .app-card-button {
+  background: linear-gradient(135deg, var(--chc-primary), var(--chc-primary-dark));
+}
+
+.app-extensor .app-card-icon {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.app-extensor .app-card-button {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.app-gastos .app-card-icon {
+  background: linear-gradient(135deg, var(--chc-yellow), #eab308);
+  color: #1f2937;
+}
+
+.app-gastos .app-card-button {
+  background: linear-gradient(135deg, var(--chc-yellow), #eab308);
+  color: #1f2937;
+}
+
+.app-soporte .app-card-icon {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.app-soporte .app-card-button {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+/* Checklist Supervisión */
+.app-checklist .app-card-icon {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.app-checklist .app-card-button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* Talento Coronel */
+.app-talento .app-card-icon {
+  background: linear-gradient(135deg, var(--chc-primary), #be123c);
+}
+
+.app-talento .app-card-button {
+  background: linear-gradient(135deg, var(--chc-primary), var(--chc-primary-dark));
+}
+
+/* Tarjeta "Próximamente" */
+.app-kpis {
+  background: #f1f5f9;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  cursor: default;
+}
+
+.app-kpis:hover {
+  transform: none;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
+}
+
+.app-kpis .app-card-icon {
+  background: linear-gradient(135deg, #9ca3af, #6b7280);
+}
+
+.app-kpis .app-card-title {
+  color: #4b5563;
+}
+
+.app-kpis .app-card-description {
+  color: #6b7280;
+}
+
+.app-kpis .app-card-button {
+  background: #9ca3af;
+  cursor: default;
+  box-shadow: none;
+}
+
+.app-kpis .app-card-button:hover {
+  transform: none;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.badge-soon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.7rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #4b5563;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Mensaje cuando no hay resultados */
+.no-results {
+  display: none;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+  margin-top: 32px;
+}
