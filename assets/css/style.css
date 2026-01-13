@@ -5,7 +5,7 @@
   --chc-primary: #8a1721;       /* vino / rojo corporativo */
   --chc-primary-dark: #6b1018;
   --chc-yellow: #f2b716;        /* amarillo franja */
-  --chc-background: #f7f3ee;   /* fondo cálido claro */
+  --chc-background: #f7f3ee;    /* fondo cálido claro */
 }
 
 /* ------------------------------
@@ -256,11 +256,12 @@ header {
   box-shadow: 0 8px 16px rgba(15, 23, 42, 0.18);
 }
 
-/* Colores por app */
+/* ------------------------------
+   Colores por app
+--------------------------------*/
 .app-incidencias .app-card-icon {
   background: linear-gradient(135deg, #a855f7, #ec4899);
 }
-
 .app-incidencias .app-card-button {
   background: linear-gradient(135deg, #a855f7, #ec4899);
 }
@@ -268,7 +269,6 @@ header {
 .app-cremeria .app-card-icon {
   background: linear-gradient(135deg, var(--chc-primary), var(--chc-yellow));
 }
-
 .app-cremeria .app-card-button {
   background: linear-gradient(135deg, var(--chc-primary), var(--chc-primary-dark));
 }
@@ -276,7 +276,6 @@ header {
 .app-extensor .app-card-icon {
   background: linear-gradient(135deg, #22c55e, #15803d);
 }
-
 .app-extensor .app-card-button {
   background: linear-gradient(135deg, #22c55e, #15803d);
 }
@@ -285,7 +284,6 @@ header {
   background: linear-gradient(135deg, var(--chc-yellow), #eab308);
   color: #1f2937;
 }
-
 .app-gastos .app-card-button {
   background: linear-gradient(135deg, var(--chc-yellow), #eab308);
   color: #1f2937;
@@ -294,7 +292,6 @@ header {
 .app-soporte .app-card-icon {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
 }
-
 .app-soporte .app-card-button {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
 }
@@ -303,7 +300,6 @@ header {
 .app-checklist .app-card-icon {
   background: linear-gradient(135deg, #22c55e, #16a34a);
 }
-
 .app-checklist .app-card-button {
   background: linear-gradient(135deg, #22c55e, #16a34a);
 }
@@ -312,31 +308,29 @@ header {
 .app-talento .app-card-icon {
   background: linear-gradient(135deg, var(--chc-primary), #be123c);
 }
-
 .app-talento .app-card-button {
   background: linear-gradient(135deg, var(--chc-primary), var(--chc-primary-dark));
 }
 
-/* Tarjeta "Próximamente" */
+/* ✅ GPS Monitoreo de Vehículos */
+.app-gps .app-card-icon {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); /* azul cielo */
+  color: #fff;
+}
+.app-gps .app-card-button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+}
+
+/* ------------------------------
+   Tarjeta "Próximamente"
+--------------------------------*/
 .app-kpis {
   background: #f1f5f9;
   border-style: dashed;
   border-color: #cbd5e1;
   cursor: default;
 }
-
-/* GPS Monitoreo de Vehículos */
-.app-gps .app-card-icon {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9); /* azul cielo */
-  color: #fff;
-}
-
-.app-gps .app-card-button {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  color: #fff;
-}
-
-
 
 .app-kpis:hover {
   transform: none;
@@ -381,7 +375,9 @@ header {
   letter-spacing: 0.08em;
 }
 
-/* Mensaje cuando no hay resultados */
+/* ------------------------------
+   Mensaje cuando no hay resultados
+--------------------------------*/
 .no-results {
   display: none;
   margin-top: 22px;
@@ -390,7 +386,9 @@ header {
   text-align: center;
 }
 
-/* Footer */
+/* ------------------------------
+   Footer
+--------------------------------*/
 footer {
   text-align: center;
   font-size: 0.75rem;
