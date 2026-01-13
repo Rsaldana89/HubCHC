@@ -325,6 +325,19 @@ header {
   cursor: default;
 }
 
+/* GPS Monitoreo de Vehículos */
+.app-gps .app-card-icon {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); /* azul cielo */
+  color: #fff;
+}
+
+.app-gps .app-card-button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+}
+
+
+
 .app-kpis:hover {
   transform: none;
   box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);

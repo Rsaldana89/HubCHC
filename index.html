@@ -16,285 +16,237 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="page-wrapper">
+<div class="page-wrapper">
 
-    <!-- ===========================
-         Encabezado
-    ============================ -->
-    <header>
-      <div class="brand-logo-wrapper">
-        <img src="assets/img/logo-coronel.png" alt="Cremería Hermanos Coronel" class="brand-logo" />
-      </div>
+<!-- ===========================
+     Encabezado
+============================ -->
+<header>
+  <div class="brand-logo-wrapper">
+    <img src="assets/img/logo-coronel.png" alt="Cremería Hermanos Coronel" class="brand-logo" />
+  </div>
 
-      <!-- CAMBIO DE TÍTULO -->
-      <div class="brand-title">Cremería Hermanos Coronel</div>
+  <div class="brand-title">Cremería Hermanos Coronel</div>
+  <div class="brand-subtitle">Portal de Aplicaciones CHC</div>
 
-      <div class="brand-subtitle">Portal de Aplicaciones CHC</div>
+  <p class="welcome-text">
+    Bienvenido al Hub de Páginas y Aplicaciones Coronel.
+  </p>
 
-      <!-- CAMBIO DE SALUDO (QUITAMOS BUENOS DÍAS/TARDES/NOCHES) -->
-      <p class="welcome-text">
-        Bienvenido al Hub de Páginas y Aplicaciones Coronel.
-      </p>
+  <p class="subwelcome-text">
+    Selecciona la herramienta que deseas utilizar.
+  </p>
+</header>
 
-      <p class="subwelcome-text">
-        Selecciona la herramienta que deseas utilizar.
-      </p>
-    </header>
+<!-- Buscador -->
+<div class="search-bar-wrapper">
+  <input
+    id="search-input"
+    class="search-input"
+    type="text"
+    placeholder="Buscar aplicaciones..."
+    autocomplete="off"
+  />
+</div>
 
-    <!-- Buscador -->
-    <div class="search-bar-wrapper">
-      <input
-        id="search-input"
-        class="search-input"
-        type="text"
-        placeholder="Buscar aplicaciones..."
-        autocomplete="off"
-      />
-    </div>
+<!-- ===========================
+     APLICACIONES
+============================ -->
+<div class="apps-section-title">Aplicaciones y sitios disponibles</div>
 
-    <!-- ===========================
-         Grid de Aplicaciones
-    ============================ -->
-    <div class="apps-section-title">Aplicaciones y sisitos disponibles</div>
+<section id="apps-grid" class="apps-grid">
 
-    <section id="apps-grid" class="apps-grid">
-
-
-      <!-- Sistema de Incidencias -->
-      <article
-        class="app-card app-incidencias"
-        data-title="Sistema de Incidencias"
-        data-description="Registro y administración de incidencias y asistencias."
-        data-url="https://chcrh-production.up.railway.app/login.html"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
-        <h2 class="app-card-title">Sistema de Incidencias</h2>
-        <p class="app-card-description">Registro y administración de incidencias y asistencias.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Admin Cremería -->
-      <article
-        class="app-card app-cremeria"
-        data-title="Admin Cremería Hermanos Coronel"
-        data-description="Administración del sitio web principal de la cremería."
-        data-url="https://cremeriahermanoscoronel.com.mx"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-cheese"></i></div>
-        <h2 class="app-card-title">Cremería Hermanos Coronel</h2>
-        <p class="app-card-description">Administración del sitio web principal de la cremería.</p>
-
-        <!-- CAMBIO: ACCEDER → VISITAR -->
-        <div class="app-card-footer">
-          <button class="app-card-button">Visitar <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Admin ExtensorCoronel -->
-      <article
-        class="app-card app-extensor"
-        data-title="Admin ExtensorCoronel"
-        data-description="Administración del portal ExtensorCoronel."
-        data-url="https://extensorcoronel.com.mx"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-cheese"></i></div>
-        <h2 class="app-card-title">ExtensorCoronel</h2>
-        <p class="app-card-description">Administración del portal ExtensorCoronel.</p>
-
-        <!-- CAMBIO: ACCEDER → VISITAR -->
-        <div class="app-card-footer">
-          <button class="app-card-button">Visitar <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Gastos de Sucursales -->
-      <article
-        class="app-card app-gastos"
-        data-title="Gastos de Sucursales"
-        data-description="Control y registro de gastos por sucursal."
-        data-url="https://gastossucursaleschc.com.mx/wp-admin/"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-        <h2 class="app-card-title">Gastos de Sucursales</h2>
-        <p class="app-card-description">Control y registro de gastos por sucursal.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Soporte -->
-      <article
-        class="app-card app-soporte"
-        data-title="Soporte 360CHC"
-        data-description="Mesa de ayuda y soporte técnico."
-        data-url="https://soporte360.up.railway.app/"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-headset"></i></div>
-        <h2 class="app-card-title">Soporte 360CHC</h2>
-        <p class="app-card-description">Mesa de ayuda y soporte técnico.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Checklist -->
-      <article
-        class="app-card app-checklist"
-        data-title="Checklist de Supervisión"
-        data-description="Checklists digitales para supervisión y seguridad en sucursales."
-        data-url="https://safetyculture.com/es/iauditor"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-        <h2 class="app-card-title">Checklist de Supervisión</h2>
-        <p class="app-card-description">Checklists digitales para supervisión y seguridad.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- Talento -->
-      <article
-        class="app-card app-talento"
-        data-title="Talento Coronel"
-        data-description="Plataforma de capacitación y desarrollo del personal."
-        data-url="https://talentocoronel.com.mx/"
-      >
-        <div class="app-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h2 class="app-card-title">Talento Coronel</h2>
-        <p class="app-card-description">Plataforma de capacitación y desarrollo del personal.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-        </div>
-      </article>
-
-
-      <!-- KPIs (Próximamente) -->
-      <article
-        class="app-card app-kpis"
-        data-title="Gestión de KPIs (Próximamente)"
-        data-description="Módulo en desarrollo para la administración de indicadores clave."
-        data-soon="true"
-      >
-        <span class="badge-soon">Próximamente</span>
-        <div class="app-card-icon"><i class="fa-solid fa-chart-line"></i></div>
-        <h2 class="app-card-title">Gestión de KPIs (Próximamente)</h2>
-        <p class="app-card-description">Módulo en desarrollo para la administración de indicadores clave.</p>
-        <div class="app-card-footer">
-          <button class="app-card-button">Próximamente</button>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- ===========================
-     HERRAMIENTAS
-=========================== -->
-<div class="apps-section-title" style="margin-top:40px;">Herramientas</div>
-
-<section class="apps-grid tools-grid">
-
-  <!-- PDF a Word -->
-  <article
-    class="app-card app-tool"
-    data-url="https://www.ilovepdf.com/pdf_to_word"
-    data-title="PDF a Word"
-    data-description="Convierte un archivo PDF a Word editable."
-  >
-    <div class="app-card-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626);">
-      <i class="fa-solid fa-file-pdf"></i>
-    </div>
-    <h2 class="app-card-title">PDF a Word</h2>
-    <p class="app-card-description">Convierte PDF a un documento Word.</p>
+  <!-- Sistema de Incidencias -->
+  <article class="app-card app-incidencias" data-url="https://chcrh-production.up.railway.app/login.html">
+    <div class="app-card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+    <h2 class="app-card-title">Sistema de Incidencias</h2>
+    <p class="app-card-description">Registro y administración de incidencias y asistencias.</p>
     <div class="app-card-footer">
-      <button class="app-card-button">Ir <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
     </div>
   </article>
 
-  <!-- Word a PDF -->
-  <article
-    class="app-card app-tool"
-    data-url="https://www.ilovepdf.com/es/word_a_pdf"
-    data-title="Word a PDF"
-    data-description="Convierte documentos Word a PDF."
-  >
-    <div class="app-card-icon" style="background:linear-gradient(135deg,#a855f7,#7e22ce);">
-      <i class="fa-solid fa-file-word"></i>
-    </div>
-    <h2 class="app-card-title">Word a PDF</h2>
-    <p class="app-card-description">Convierte Word a PDF.</p>
+  <!-- Cremería -->
+  <article class="app-card app-cremeria" data-url="https://cremeriahermanoscoronel.com.mx">
+    <div class="app-card-icon"><i class="fa-solid fa-cheese"></i></div>
+    <h2 class="app-card-title">Cremería Hermanos Coronel</h2>
+    <p class="app-card-description">Administración del sitio web principal.</p>
     <div class="app-card-footer">
-      <button class="app-card-button">Ir <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="app-card-button">Visitar <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
     </div>
   </article>
 
-  <!-- Generador de QR -->
-  <article
-    class="app-card app-tool"
-    data-url="https://qrsave.netlify.app/"
-    data-title="Generador de QR"
-    data-description="Crea códigos QR fácilmente."
-  >
-    <div class="app-card-icon" style="background:linear-gradient(135deg,#10b981,#059669);">
-      <i class="fa-solid fa-qrcode"></i>
-    </div>
-    <h2 class="app-card-title">Generador de QR</h2>
-    <p class="app-card-description">Crea códigos QR rápidamente.</p>
+  <!-- Extensor -->
+  <article class="app-card app-extensor" data-url="https://extensorcoronel.com.mx">
+    <div class="app-card-icon"><i class="fa-solid fa-cheese"></i></div>
+    <h2 class="app-card-title">ExtensorCoronel</h2>
+    <p class="app-card-description">Administración del portal ExtensorCoronel.</p>
     <div class="app-card-footer">
-      <button class="app-card-button">Ir <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="app-card-button">Visitar <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
     </div>
   </article>
 
-  <!-- Validación de URLs -->
-  <article
-    class="app-card app-tool"
-    data-url="https://www.virustotal.com/gui/home/url"
-    data-title="Validación de URLs"
-    data-description="Analiza URLs para detectar malware."
-  >
-    <div class="app-card-icon" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);">
-      <i class="fa-solid fa-shield-halved"></i>
-    </div>
-    <h2 class="app-card-title">Validación de URLs</h2>
-    <p class="app-card-description">Analiza enlaces sospechosos.</p>
+  <!-- Gastos -->
+  <article class="app-card app-gastos" data-url="https://gastossucursaleschc.com.mx/wp-admin/">
+    <div class="app-card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+    <h2 class="app-card-title">Gastos de Sucursales</h2>
+    <p class="app-card-description">Control y registro de gastos.</p>
     <div class="app-card-footer">
-      <button class="app-card-button">Ir <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
     </div>
   </article>
 
-  <!-- ChatGPT -->
-  <article
-    class="app-card app-tool"
-    data-url="https://chatgpt.com/"
-    data-title="ChatGPT Inteligencia Artificial"
-    data-description="Asistente basado en IA para productividad."
-  >
-    <div class="app-card-icon" style="background:linear-gradient(135deg,#0ea5e9,#0369a1);">
-      <i class="fa-solid fa-robot"></i>
-    </div>
-    <h2 class="app-card-title">ChatGPT (IA)</h2>
-    <p class="app-card-description">Asistente inteligente para tareas diarias.</p>
+  <!-- Soporte -->
+  <article class="app-card app-soporte" data-url="https://soporte360.up.railway.app/">
+    <div class="app-card-icon"><i class="fa-solid fa-headset"></i></div>
+    <h2 class="app-card-title">Soporte 360CHC</h2>
+    <p class="app-card-description">Mesa de ayuda y soporte técnico.</p>
     <div class="app-card-footer">
-      <button class="app-card-button">Ir <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+  </article>
+
+  <!-- Checklist -->
+  <article class="app-card app-checklist" data-url="https://safetyculture.com/es/iauditor">
+    <div class="app-card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+    <h2 class="app-card-title">Checklist de Supervisión</h2>
+    <p class="app-card-description">Checklists digitales.</p>
+    <div class="app-card-footer">
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+  </article>
+
+  <!-- Talento -->
+  <article class="app-card app-talento" data-url="https://talentocoronel.com.mx/">
+    <div class="app-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+    <h2 class="app-card-title">Talento Coronel</h2>
+    <p class="app-card-description">Capacitación y desarrollo del personal.</p>
+    <div class="app-card-footer">
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+  </article>
+
+  <!-- GPS -->
+  <article class="app-card app-gps" data-url="https://gstrackme.mx/login?lang=es">
+    <div class="app-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+    <h2 class="app-card-title">GPS Monitoreo de Vehículos</h2>
+    <p class="app-card-description">Rastreo GPS y monitoreo de unidades.</p>
+    <div class="app-card-footer">
+      <button class="app-card-button">Acceder <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+  </article>
+
+  <!-- KPIs -->
+  <article class="app-card app-kpis" data-soon="true">
+    <span class="badge-soon">Próximamente</span>
+    <div class="app-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+    <h2 class="app-card-title">Gestión de KPIs</h2>
+    <p class="app-card-description">Módulo en desarrollo.</p>
+    <div class="app-card-footer">
+      <button class="app-card-button">Próximamente</button>
     </div>
   </article>
 
 </section>
 
+<!-- ===========================
+     HERRAMIENTAS
+============================ -->
+<div class="apps-section-title" style="margin-top:40px;">Herramientas</div>
 
-    <p id="no-results" class="no-results">No se encontraron aplicaciones para tu búsqueda.</p>
+<section class="apps-grid tools-grid">
 
-    <footer>© <span id="year-span"></span> Cremería Hermanos Coronel · Portal de Aplicaciones CHC</footer>
-  </div>
+  <article class="app-card app-tool" data-url="https://www.ilovepdf.com/pdf_to_word">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626);">
+      <i class="fa-solid fa-file-pdf"></i>
+    </div>
+    <h2 class="app-card-title">PDF a Word</h2>
+    <p class="app-card-description">Convierte PDF a Word.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
 
-  <!-- JavaScript -->
-  <script src="assets/js/app.js" defer></script>
+  <article class="app-card app-tool" data-url="https://www.ilovepdf.com/es/word_a_pdf">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#a855f7,#7e22ce);">
+      <i class="fa-solid fa-file-word"></i>
+    </div>
+    <h2 class="app-card-title">Word a PDF</h2>
+    <p class="app-card-description">Convierte Word a PDF.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://qrsave.netlify.app/">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#10b981,#059669);">
+      <i class="fa-solid fa-qrcode"></i>
+    </div>
+    <h2 class="app-card-title">Generador de QR</h2>
+    <p class="app-card-description">Crea códigos QR.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://www.virustotal.com/gui/home/url">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);">
+      <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <h2 class="app-card-title">Validación de URLs</h2>
+    <p class="app-card-description">Analiza enlaces sospechosos.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://chatgpt.com/">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#0ea5e9,#0369a1);">
+      <i class="fa-solid fa-robot"></i>
+    </div>
+    <h2 class="app-card-title">ChatGPT</h2>
+    <p class="app-card-description">Asistente IA.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://teams.microsoft.com/">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#6366f1,#4338ca);">
+      <i class="fa-brands fa-microsoft"></i>
+    </div>
+    <h2 class="app-card-title">Microsoft Teams</h2>
+    <p class="app-card-description">Reuniones y colaboración.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://outlook.office.com/mail/">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#0ea5e9,#0369a1);">
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+    <h2 class="app-card-title">Correo Outlook</h2>
+    <p class="app-card-description">Correo corporativo.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+  <article class="app-card app-tool" data-url="https://www.office.com/">
+    <div class="app-card-icon" style="background:linear-gradient(135deg,#f97316,#ea580c);">
+      <i class="fa-solid fa-file-lines"></i>
+    </div>
+    <h2 class="app-card-title">Office 365 Online</h2>
+    <p class="app-card-description">Aplicaciones Office en la nube.</p>
+    <div class="app-card-footer"><button class="app-card-button">Ir</button></div>
+  </article>
+
+</section>
+
+<p id="no-results" class="no-results">No se encontraron aplicaciones para tu búsqueda.</p>
+
+<!-- NOTA -->
+<div style="margin-top:28px;padding:14px 18px;border-radius:12px;background:#fff7ed;border:1px solid #fed7aa;font-size:0.85rem;color:#7c2d12;text-align:center;">
+  <strong>Nota:</strong>
+  Todos los portales y algunas aplicaciones requieren
+  <strong>credenciales de autenticación propias</strong>.
+  <br>
+  En caso de no contar con acceso o requerirlo por funciones de su puesto,
+  favor de <strong>solicitar las credenciales a su jefe directo</strong>.
+</div>
+
+<footer>
+  © <span id="year-span"></span> Cremería Hermanos Coronel · Portal de Aplicaciones CHC
+</footer>
+
+</div>
+<script src="assets/js/app.js" defer></script>
 </body>
 </html>
