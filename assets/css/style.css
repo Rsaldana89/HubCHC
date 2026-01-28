@@ -395,3 +395,62 @@ footer {
   color: #a1a1aa;
   margin-top: 32px;
 }
+
+
+/* ==============================
+   KPIs BETA (habilitado)
+================================ */
+.app-kpis-beta .app-card-icon {
+  background: linear-gradient(135deg, #0f172a, #334155);
+  color: #fff;
+}
+
+.app-kpis-beta .app-card-button {
+  background: linear-gradient(135deg, #0f172a, #334155);
+  color: #fff;
+}
+
+/* Badge BETA */
+.badge-beta {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.7rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(242, 183, 22, 0.22);
+  color: #7c2d12;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(242, 183, 22, 0.45);
+}
+
+/* ==============================
+   FIX: Botones "IR" en Herramientas
+   (mejor contraste)
+================================ */
+
+/* Botones de herramientas (activos) */
+.tools-grid .app-tool .app-card-button {
+  background: var(--chc-primary);
+  color: #fff;
+  opacity: 1;
+}
+
+/* Hover/active para herramientas */
+.tools-grid .app-tool .app-card-button:hover {
+  opacity: 0.95;
+}
+
+.tools-grid .app-tool .app-card-button:active {
+  opacity: 1;
+}
+
+/* Asegura que tarjetas "Próximamente" sigan viéndose deshabilitadas */
+.tools-grid [data-soon="true"] .app-card-button,
+.tools-grid .app-directorio .app-card-button {
+  background: #9ca3af;
+  color: #fff;
+  opacity: 1;
+}
